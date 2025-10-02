@@ -1,4 +1,4 @@
-
+'''Demonstration of Python generators. by prodigyview'''
 # Simple generator yielding numbers 0-9
 def gen():
     yield from range(10)
@@ -39,3 +39,6 @@ try:
         print(gen_ob.__next__())
 except StopIteration:
     print("End of generator.")
+
+
+    
