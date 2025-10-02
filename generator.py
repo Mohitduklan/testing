@@ -1,0 +1,50 @@
+def gen():
+    yield from range(10)
+
+print(gen)
+print(gen())
+print(type(gen))
+print(type(gen()))
+print(next(gen()))
+print(next(gen()))
+
+gen_ob = gen()
+print(gen_ob.__next__())
+print(gen_ob.__next__())
+print(gen_ob.__next__())
+print(gen_ob.__next__())
+print(gen_ob.__next__())
+print(gen_ob.__next__())
+
+
+
+def gen_gen():
+    yield from gen()
+    yield from range(11, 20)
+
+
+gen_ob = gen_gen()
+print(gen_ob.__next__())
+print(gen_ob.__next__())
+print(gen_ob.__next__())
+print(gen_ob.__next__())
+print(gen_ob.__next__())
+print(gen_ob.__next__())
+print(gen_ob.__next__())
+print(gen_ob.__next__())
+print(gen_ob.__next__())
+print(gen_ob.__next__())
+print(gen_ob.__next__())
+print(gen_ob.__next__())
+print(gen_ob.__next__())
+print(gen_ob.__next__())
+print(gen_ob.__next__())
+print(gen_ob.__next__())
+print(gen_ob.__next__())
+print(gen_ob.__next__())
+print(gen_ob.__next__())
+print(gen_ob.__next__())
+print(gen_ob.__next__())
+print(gen_ob.__next__())
+print(gen_ob.__next__())
+print(gen_ob.__next__())
