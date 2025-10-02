@@ -1,4 +1,4 @@
-
+# Changed by main
 # Simple generator yielding numbers 0-9
 def gen():
     yield from range(10)
